@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{{ page.title }}</title>
+
+    <meta name='description' content='' />
+
+    <!-- OpenGraph properties -->
+    <meta property='og:locale' content='en_US' />
+
+    <link rel='canonical' href='' />
+
+    <!-- CSS -->
+    <link href='{{ site.url }}/css/bootstrap.css' rel='stylesheet'>
+    <link href='{{ site.url }}/css/seabird.css' rel='stylesheet'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+      <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
+    <![endif]-->
+
+    <!--<link rel='shortcut icon' type='image/x-icon' href='http://cdn.shopify.com/s/files/1/0272/5459/files/favicon1.ico?6592'>-->
+  </head>
+
+  <body>
+    <div id='header' data-spy="affix" data-offset-top="250" data-offset-bottom="0">
+      <div id='carousel' class='carousel slide' data-ride='carousel'>
+        <!-- Wrapper for slides -->
+        <div class='carousel-inner'>
+          <div class='item active'>
+            <img src='{{ site.url }}/img/header.jpg' style='height: 300px'>
+          </div>
+
+          <!-- <div class='item'>
+            Another slide
+          </div>
+
+          <div class='item'>
+            Last slide
+          </div> -->
+        </div>
+
+        <!-- Controls -->
+        <a class='left carousel-control' href='#carousel' data-slide='prev'>
+          <span class='glyphicon glyphicon-chevron-left'></span>
+        </a>
+        <a class='right carousel-control' href='#carousel' data-slide='next'>
+          <span class='glyphicon glyphicon-chevron-right'></span>
+        </a>
+      </div>
+
+      <div id='navbar' class='navbar navbar-inverse center' role='navigation'>
+        <div class='container'>
+          <ul class='nav navbar-nav'>
+            <li><a href='{{ site.url }}/posts'>Blog</a></li>
+            <li><a href='{{ site.url }}/gallery'>Gallery</a></li>
+            <li><a href='{{ site.url }}'><img src='{{ site.url }}/img/seabird.svg'></a></li>
+            <li><a href='http://youtube.com/'>Videos</a></li>
+            <li><a href='http://etsy.com/'>Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class='content'>
+      {{ content }}
+    </div>
+
+    <div id='footer'>
+      <p>Footer</p>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src='https://code.jquery.com/jquery.js'></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='{{ site.url }}/js/bootstrap.min.js'></script>
+    <!-- The JavaScript -->
+    <script type='text/javascript'>
+    </script>
+  </body>
+</html>
+

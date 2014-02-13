@@ -1,0 +1,5 @@
+name: Seabird Woodworking
+markdown: redcarpet
+pygments: true
+url: 'http://dlecocq.github.io/seabird/'
+permalink: /:year/:month/:day/:title
